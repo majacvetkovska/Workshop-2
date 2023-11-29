@@ -5,13 +5,12 @@ on:
 
 jobs:
   terraform_apply:
-    name: 'Terraform Apply'
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
-      
+
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
 
