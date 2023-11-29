@@ -16,6 +16,7 @@ jobs:
 
     - name: Terraform Init
       run: terraform init
+      working-directory: Workshop Terraform
 
     - name: Terraform Apply
       run: terraform apply -auto-approve
